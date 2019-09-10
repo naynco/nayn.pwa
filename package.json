@@ -1,0 +1,75 @@
+{
+  "name": "nayn.pwa",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "storybook": "build-storybook -c config/storybook",
+    "storybook:serve": "start-storybook -p 6006 -c config/storybook",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "vue-cli-service test:unit",
+    "e2e": "vue-cli-service test:e2e"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.22",
+    "@fortawesome/free-solid-svg-icons": "5.10.2",
+    "@fortawesome/vue-fontawesome": "0.1.7",
+    "axios": "0.19.0",
+    "core-js": "3.2.1",
+    "localforage": "1.7.3",
+    "query-string": "6.8.3",
+    "register-service-worker": "1.6.2",
+    "sanitize-html": "1.20.1",
+    "vue": "2.6.10",
+    "vue-lazyload": "1.3.2",
+    "vue-router": "3.1.3",
+    "vue-styled-components": "1.4.9",
+    "vuedraggable": "2.23.0",
+    "vuex": "3.1.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-knobs": "5.1.11",
+    "@storybook/addon-viewport": "5.1.11",
+    "@storybook/vue": "5.1.11",
+    "@types/jest": "24.0.18",
+    "@types/sanitize-html": "1.20.1",
+    "@types/storybook__vue": "5.0.2",
+    "@typescript-eslint/parser": "1.13.0",
+    "@vue/cli-plugin-babel": "3.11.0",
+    "@vue/cli-plugin-e2e-cypress": "3.11.0",
+    "@vue/cli-plugin-eslint": "3.11.0",
+    "@vue/cli-plugin-pwa": "3.11.0",
+    "@vue/cli-plugin-typescript": "3.11.0",
+    "@vue/cli-plugin-unit-jest": "3.11.0",
+    "@vue/cli-service": "3.11.0",
+    "@vue/eslint-config-prettier": "5.0.0",
+    "@vue/eslint-config-typescript": "4.0.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-vue": "5.2.3",
+    "husky": "3.0.5",
+    "lint-staged": "9.2.5",
+    "sass": "1.22.10",
+    "sass-loader": "7.3.1",
+    "ts-jest": "24.0.2",
+    "typescript": "3.6.2",
+    "vue-template-compiler": "2.6.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}

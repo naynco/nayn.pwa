@@ -1,0 +1,17 @@
+{
+  "name": "nayn.pwa",
+  "short_name": "nayn",
+  "description": "NAYN.PWA RSS Reader",
+  "icons": [
+    {
+      "src": "/img/icons/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fffc00",
+  "lang": "tr"
+}
