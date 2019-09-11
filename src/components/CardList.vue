@@ -59,14 +59,11 @@ export default {
   white-space: nowrap;
   overflow: hidden;
   padding: 4px 8px;
-  display:none;
+  display: none;
 }
 .card-column {
   position: relative;
   left: 0px;
   display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 </style>

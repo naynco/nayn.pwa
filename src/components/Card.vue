@@ -59,9 +59,9 @@ export default {
 
   border-radius: 8px;
   border: 1px solid #ccc;
-  height: 200px;
+  height: 400px;
   transition: all 0.3s;
-  width: 200px;
+  width: 400px;
 }
 .card-image::before {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
@@ -85,10 +85,12 @@ export default {
   color: #fff;
   filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 1));
   word-wrap: break-word;
-  font-size: 1rem;
-  line-height: 1.25rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
   padding: 8px;
   user-select: none;
+  position: absolute;
+  bottom: 0px;
 }
 @media screen and (max-width: 768px) {
   .card-image {
